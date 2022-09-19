@@ -22,6 +22,8 @@
             echo "<h2>Hello $first $second! Greetings from BindAPI.</h2>"; 
         }
     ?>
+    
+    OTH
 
 </body>
 </html>
