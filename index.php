@@ -12,15 +12,17 @@
         <input type="text" name="second_name" placeholder="Second name">
         <button type="submit" name="submit">Send</button>
     </form>
+    
+    <?php
+        if(isset($_POST['submit']))
+        {
+            $first = $_POST['first_name'];
+            $second =  $_POST['second_name'];
+
+            echo "<h2>Hello $first $second! Greetings from BindAPI.</h2>"; 
+        }
+    ?>
+
 </body>
 </html>
-
-<?php
-    if(isset($_POST['submit']))
-    {
-        $first = $_POST['first_name'];
-        $second =  $_POST['second_name'];
-
-        echo "<h2>Hello $first $second! Greetings from BindAPI.</h2>"; 
-    }
-?>
+        
